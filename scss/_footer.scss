@@ -1,0 +1,35 @@
+// Styling for the footer
+footer {
+    padding: 85px 0;
+    text-align: center;
+    color: fade-out(white, .7);
+    background-color: $gray-darker;
+    position: relative;
+    p {
+        font-size: 12px;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 200;
+        span{
+            font-weight: 700;
+        }
+    }
+    ul {
+        margin-bottom: 0;
+        font-size: 12px;
+        font-weight: 200;
+        li {
+            a {
+                font-size: 12px;
+                color: fade-out(white, .7);
+                font-weight: 500;
+                &:hover,
+                &:focus,
+                &:active,
+                &.active {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
