@@ -9,7 +9,7 @@
         color: white;
         @include body-font;
         font-weight: 200;
-        font-size: 40px;
+        font-size: 25px;
         text-transform: uppercase;
         span {
             font-weight: 800;
@@ -55,6 +55,7 @@
     }
     @media (min-width: 992px) {
         .navbar-brand {
+            font-size: 40px;
             color: fade(white, 70%);
             &:hover,
             &:focus {
