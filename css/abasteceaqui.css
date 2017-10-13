@@ -8,8 +8,7 @@ body {
   height: 100%; }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden; }
+  font-family: 'Montserrat', sans-serif; }
 
 a {
   color: #04A9E9;
@@ -161,7 +160,9 @@ header.masthead {
     width: auto;
     height: auto; }
     header.masthead .video-container video {
-      width: 100%;
+      position: fixed;
+      min-width: 100%;
+      min-height: 100%;
       width: auto;
       height: auto; }
   header.masthead .device-container {

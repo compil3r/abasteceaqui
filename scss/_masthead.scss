@@ -48,7 +48,9 @@ header.masthead {
     height: auto;
     
     video {
-        width: 100%;
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
         width: auto;
         height: auto;
     }
