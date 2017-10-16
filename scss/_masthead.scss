@@ -32,13 +32,19 @@ header.masthead {
         }
 
     }
-    button {
+    .btn-default {
         margin-top: 10px;
         border-radius: 0px;
         color: $theme-tertiary;
         font-size: 25px;
+        border: none;
         &:focus {
             box-shadow: none;
+        }
+        &:hover {
+            background: $theme-secondary;
+            color: $theme-tertiary;
+            border: none;
         }
     }
 }
@@ -94,8 +100,109 @@ header.masthead {
         margin-right: auto !important;
         margin-top: 140px;
     }
-     .device-container {
+    .device-container {
         margin-bottom: -163px;
     }
 }
+}
+
+
+
+
+// Styling for the masthead
+section.masthead {
+    position: relative;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color: white;
+    background: $theme-secondary;
+    background: -webkit-linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    background: linear-gradient(to left, $theme-secondary, $theme-tertiary);
+    h1 {
+        font-size: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    hr {
+        margin-bottom: 30px; 
+        max-width: 50%;
+        border: 0;
+        height: 1px;
+        background: #1e5799;
+        background: linear-gradient(to left, $theme-tertiary, white,  $theme-tertiary);
+    }
+    p{
+        text-indent: 45px;
+        font-weight: 200;
+        text-align: justify;
+    }
+    .video-container {
+        position:absolute;
+        width: auto;
+        height: auto;
+
+        video {
+            position: fixed;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .device-container {
+        max-width: 325px;
+        margin-right: auto;
+        margin-left: auto;
+        .screen img {
+            border-radius: 3px;
+        }
+    }
+
+    .col-video {
+        iframe {
+            height: auto;
+            border: none;
+        }
+    }
+    @media (min-width: 992px) {
+        height: 100vh;
+        min-height: 775px;
+        .header-content {
+            margin-bottom: 0;
+            text-align: left;
+        }
+        .device-container {
+            max-width: 100%;
+            margin-bottom: -260px;
+        }
+    }
+    @media (max-width: 1200px) {
+        .device-container {
+            margin-bottom: -314px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        padding-top: 100px;
+        .header-content {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-top: 140px;
+        }
+        .device-container {
+            margin-bottom: -163px;
+        }
+
+       
+    }
+
+    @media (max-width: 576px) {
+         .col-video {
+        iframe {
+            min-height: 390px;
+        }
+    }
+    }
 }

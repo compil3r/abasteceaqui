@@ -9,7 +9,7 @@
         color: white;
         @include body-font;
         font-weight: 200;
-        font-size: 25px;
+        font-size: 20px;
         text-transform: uppercase;
         span {
             font-weight: 800;
@@ -34,7 +34,7 @@
     .navbar-nav {
         > li {
             > a {
-                font-size: 20px;
+                font-size: 15px;
                 @include alt-font;
                 &.active {
                     color: $theme-primary !important;
